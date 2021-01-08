@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>PROGRAMING LANGUAGE TUTORIAL</title>
+		<link rel="stylesheet" href="cquiz.css">
+	</head>
+	<style>
+	 .menu1{
+			background-image:url("homepic6.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+		}
+		.menu2{
+		border:1px solid black;
+		height:2200px;
+		width:1000px;
+		margin-left:100px;
+		margin-top:100px;
+	    background-color:rgba(74,82,71,0.2);
+			
+		}
+	</style>
+	<body>		
+		<header id="header">
+			<div id="logo">
+				<h1><i>BE-A-CODER TUTORIAL POINT</i></h1>
+			</div>
+			<nav>
+				<div class="innertube">
+				<ul>
+				    <li><a href="quiz_homepage.html">HOME</a></li>
+					<li><a href="cquizhomepage.html">C</a></li>
+					<li><a href="c++quizhomepage.html">C++</a></li>
+					<li><a href="phpquizhomepage.html">PHP</a></li>
+					<li><a href="htmlquizhomepage.html">HTML</a></li>
+					<li><a href="mysqlquizhomepage.html">MYSQL</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+				
+		<main class="menu1">
+			<div class="innertube1">
+				
+				<h1 style="margin-left:30%; margin-top:-3%; margin-bottom:3%; color:#fff; ">HELLO AND WELCOME IN</br></br></br> <span style="font-size:40px">BE-A-CODER</span></h1>
+			</div>
+			<div class="menu2">
+				<div class="text" style="color:white">
+				<p  style="color:#fff"><h1><u>PHP:HYPERTEXT PREPROCESSER</u></h1><br>
+				<h2><u>OVERVIEW:</u></h2>To develop an understanding of how PHP works it is helpful to first explore what happens when a web page is served to a user's browser. 
+When a user visits a web site or clicks on a link on a page the browser sends a request to the web server hosting the
+ site asking for a copy of the web page. The web server receives the request, finds the corresponding web page file on the file system and sends it back, over the internet, to the user's browser. 
+Typically the web server doesn't pay any attention to the content of the file it has just transmitted to the web browser.
+ As far as the web server is concerned the web browser understands the content of the web page file and knows how to 
+ interpret and render it so that it appears as the web designer intended. 
+Now let's consider what kind of web page content a web browser understands. These days a web page is likely to consist of HTML, XHTML and JavaScript.
+ The web browser contains code that tells it what to do with these types of content. For example, it understands the structure HTML in terms of rendering the page and it has a JavaScript interpreter built in that knows how to execute the instructions in a JavaScript script. A web browser, however, knows absolutely nothing about any PHP script that may be embedded in an HTML document. If a browser was served a web page containing PHP it would not know how to interpret that code. 
+Given that a web browser knows nothing about PHP in a web page, then clearly something has to be done with any PHP script in the page before it reaches the browser. This is where the PHP pre-processing module comes in. The PHP module is, as mentioned previously, integrated into the web server. 
+The module tells the web server that when a page is to be served which contains PHP script (identified by special markers) that it is to pass that script to the PHP pre-processing module and wait for the PHP module to send it some content to replace that script fragment.
+ The PHP processing module understands PHP, executes the PHP script written by the web developer and, based on the script instructions, creates output that the browser will understand. The web server substitutes the content provided by the PHP pre-processor module in place of the PHP script
+ in the web page and sends it to the browser where it is rendered for the user to view. 
+To help understand this concept let's take a quick look at a before and after scenario. The following HTML contains some PHP script that is designed to output an HTML paragraph tag: 
+				<br>
+				<h2><u>Why PHP IS SO USEFUL? :</u></h2>In terms of web page content we have two extremes. At one extreme we have HTML which is completely static. There is very little that can be done with HTML to create dynamic content in a web page. At the other extreme we have scripting languages like JavaScript.
+				JavaScript provides a powerful mechanism for creating interactive and dynamic web pages. 
+When talking about JavaScript it is important to understand that it is, by design, a client side scripting language. By this we mean that the script gets executed inside the user's browser and not on the web server on which the web page originated. Whilst this is fine for many situations it is often the case
+ that by the time a script reaches the browser it is then either too late, or inefficient, to do what is needed. A prime example of this involves displaying a web page which contains some data from a database table. Since the database resides on a server (either the same physical server which runs the web server or on the same network as the web server 
+ connected by a high speed fiber network connection) it makes sense for any script that needs to extract data from the database to be executed on the server, rather than waiting until it reaches the browser. It is for this kind of task that PHP is perfectly suited. 
+ It is also fast and efficient (because the script is executed on the server it gets to take advantage of multi-processing, large scale memory and other such enterprise level hardware features. 
+In addition to the advantages of being a server side scripting language PHP is easy to learn and use. The fact that PHP works seamlessly with HTML makes it accessible to a broad community of web designers. 
+Perhaps one of the most significant advantages of PHP to some is the ease with which it interacts with the MySQL database to retrieve and store data. <br>
+				<h2><u>DEVELOPMENT :</u></h2>The above example is certainly an oversimplification of the power of PHP.
+				Some may question why one would use PHP to output some static text that could have been achieved more easily using an HTML tag. The fact is, however, HTML only makes sense if you know beforehand exactly what needs to be displayed in the web page. Imagine instead, 
+				that you are developing an online banking application. One of the pages you need to display must contain the customer's bank account number combined with the current balance. Obviously this information is going to be different for each customer. In this scenario you would develop an HTML page that essentially serves as a template for the page, and then embed PHP into the page to extract the account and balance information from a database. Once processed by the PHP module integrated into the web server, this customer specific content will then appear in the HTML
+				page in place of the PHP script when the page is loaded into the browser. </p>
+				  <div style="text-align:center"> <a href="phpquiz.html"><input type="button" name="NEXT"  value="START QUIZ"/></div></a></br>
+				<br><h4 style="color:blue"><u>FOR MORE LEARNING CHOOSE ANY ONE</u></h4><br><a href="https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.pdf"><img src="htmlbook1.png" style="width:200px;height:200px"></img></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhc2hpa2FtYXRpbnxneDo2YmM0ZWYyOTJkMjBlYWNi"><img src="htmlbook2.png" style="width:200px;height:200px" style="float:right"></img></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a href="https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhc2hpa2FtYXRpbnxneDo2YmM0ZWYyOTJkMjBlYWNi"><img src="htmlbook3.png" style="width:200px;height:200px"></img></a>
+				<br><h4 style="color:blue"><u>OTHER BOOKS</u></h4><br><a href="cbook1.jpg"><img src="cbook1.jpg" style="width:200px;height:200px"></img></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a href="#"><img src="cbook2.jpg" style="width:200px;height:200px" style="float:right"></img></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<a href="#"><img src="cbook3.jpg" style="width:200px;height:200px"></img></a>
+				<br><h4 style="color:blue"><a href="itw_start.html" style="color:white">KNOW ABOUT US</a></h4><br>
+			</div>
+			</div>
+		</main>
+	</body>
+	</body>
+</html>

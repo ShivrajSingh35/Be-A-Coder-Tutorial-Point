@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+USER-LOGIN-PAGE
+</title>
+<style>
+.menu{
+font-size:50px;
+text-align:center;
+margin-top:200px;
+}
+SUBMIT:hover{
+cursor:pointer;
+}
+ #back-video
+	  {
+	    position:fixed;
+		right:0;
+		bottom: 0;
+		min-width :100%;
+		min-height:100%;
+		height:auto;
+		width:auto;
+		z-index:-100;
+	  }
+</style>
+</head>
+<body> 
+<video autoplay loop id="back-video" muted>
+	<source src="backvideo_ip2.mp4" type="video/mp4">
+	</video>
+<form onsubmit="return my_func()" name="my_form" action="start_page.html" method="post">
+<div class="menu" style="color:white">
+<fieldset><legend><u>INPUT INFORMATION</u></legend>
+<u>USERNAME</u><span id="message" style="color:red"></span><br>
+<input type="text" name="username" value="" id="form_data" placeholder="            Enter  your  Name  Here" size="40" style="height:30px;border-radius:8px"/><br>
+<u>EMAIL</u><span id="message" style="color:red"></span><br>
+<input type="text" name="email" value="" id="e_mail" placeholder="            Enter your E-mail address" size="40" style="height:30px;border-radius:10px"/><br>
+<u>PASSWORD</u><span id="message" style="color:red"></span><br>
+<input type="password" name="pass"  value="" id="form_pass" placeholder="           Enter  Your  Password" size="40" style="height:30px;border-radius:10px"/><br> 
+<input type="submit" name="submit" placeholder="SUBMIT" style="width:100px;height:40px;margin-left:-2%;border-radius:10px;"/> 
+<input type="reset" name="clear" placeholder="RESET" style="width:100px;height:40px;margin-left:2%;border-radius:10px"/>
+</form></fieldset></div>
+<script>
+	    function my_func()
+		 {
+		  // USER NAME Validation;
+		   var correct_way=/^[A-Za-z]+$/;
+		   var data=document.getElementById("form_data").value;
+		    if(data=="")
+		     {
+		       document.getElementById("message").innerHTML="** Please Enter Your Name";
+			   return false;
+		     }
+			if(data.length<3)
+		     {
+		       document.getElementById("message").innerHTML="** Entered Name must have minimum 3 characters";
+			   return false;
+		     }
+			if(data.length>20)
+		     {
+		       document.getElementById("message").innerHTML="** Entered Name can have maximum 20 characters";
+			   return false;
+		     }
+			if(data.match(correct_way))
+             {
+			    true;
+			 }		
+            else
+             {
+			   document.getElementById("message").innerHTML="** Enter only characters please";
+			   return false;
+			 }
+			 // Password Validation
+          var pass=document.getElementById("form_pass").value;
+		  //var con_pass=document.getElementById("form_conpass").value;
+		    if(pass=="")
+		     {
+		       document.getElementById("message").innerHTML="** Please Enter Password";
+			   return false;
+		     }
+			if(pass.length<3)
+		     {
+		       document.getElementById("message").innerHTML="** Entered Password must have minimum 3 characters";
+			   return false;
+		     }
+			if(pass.length>20)
+		     {
+		       document.getElementById("message").innerHTML="** Entered Password can have maximum 20 characters";
+			   return false;
+		     }	
+           	/*if(pass==con_pass)
+             {
+			    true;
+			 }		
+            else
+             {
+			   document.getElementById("message").innerHTML="** Passwords are not same";
+			   return false;
+			 }*/
+          // Email Validation;	
+        var mail=document.my_form.email.value;
+		//var mail=document.getElementById("email").value;
+    	    if(mail=="")
+		     {
+		       document.getElementById("message").innerHTML="** Please Enter Email";
+			   return false;
+		     }
+            if(mail.indexOf('@')<=0)
+		     {
+		       document.getElementById("message").innerHTML="** INVALID @ POSITION";
+			   return false;
+		     }		
+            if((mail.charAt(mail.length-4)!=='.')&&(mail.charAt(mail.length-3)!=='.'))
+		     {
+		       document.getElementById("message").innerHTML="** INVALID . POSITION";
+			   return false;
+		     }
+	 }
+</script>
+</body>
+</html>

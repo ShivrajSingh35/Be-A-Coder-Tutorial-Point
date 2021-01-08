@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>PROGRAMING LANGUAGE TUTORIAL</title>
+		<link rel="stylesheet" href="cquiz.css">
+	</head>
+	<style>
+	 .menu1{
+			background-image:url("pic13.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment:fixed;
+		}
+		.menu2{
+	    background-color:rgba(74,82,71,0.2);
+			
+		}
+	</style>
+	<body>		
+
+		<header id="header">
+			<div id="logo">
+				<h1><i>BE-A-CODER TUTORIAL POINT</i></h1>
+			</div>
+			<nav>
+				<div class="innertube">
+				<ul>
+				    <li><a href="quiz_homepage.html">HOME</a></li>
+					<li><a href="cquizhomepage.html">C</a></li>
+					<li><a href="c++quizhomepage.html">C++</a></li>
+					<li><a href="phpquizhomepage.html">PHP</a></li>
+					<li><a href="htmlquizhomepage.html">HTML</a></li>
+					<li><a href="mysqlquizhomepage.html">MYSQL</a></li>
+				</ul>
+				</div>
+			</nav>
+		</header>
+				
+		<main class="menu1">
+			<div class="innertube1">
+				
+				<h1 style="margin-left:44%; margin-top:-3%; margin-bottom:3%; color:#fff; ">HELLO AND WELCOME IN</br></br></br>
+				<span style="font-size:40px">BE-A-CODER</span></h1>
+			</div>
+			<div style="float:left; background-color: rgba(0,0,0,0.5); color:#fff; border-radius:60%; height: 140px; width: 150px; margin-left: 10%;">
+				<p style="margin-left:24%; margin-top: 24%; font-size: 19px">Time left: </p><span id="time" style="font-weight: bold; margin-left:37%; font-size: 24px"> </span>
+			</div>
+			<div class="menu2">
+				<div class="text">
+				<p>Q-3. Which of the following function creates an array?.<br>
+				<script>			
+var countDownDate = new Date().getTime() + 30000;
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    document.getElementById("time").innerHTML = seconds + "s ";
+    // Output the result in an element with id="demo"
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        window.location.href = "phpquiz4.html";
+    }
+}, 1000);
+		</script>
+				 <input type="radio" name="phpq3"/> array_change_key_case().<br>
+                 <input type="radio" name="phpq3"/>array().<br>
+				 <input type="radio" name="phpq3"/>array_chunk().<br>
+				 <input type="radio" name="phpq3"/> array_count_values().<br>
+				 <a href="phpquiz2.html"><input type="button" name="PREV"  value="PREV"/></a>
+				  <span style="float:right"> <a href="phpquiz4.html"><input type="button" name="NEXT"  value="NEXT"/></span></a></br>
+				  <div style="text-align:center"><input type="submit" value="SUBMIT" onclick="fn_call();"></div>
+				  <input type="button" name="SHOW ANSWER"  value="SHOW ANSWER" onclick="fn_ans();"/></p>
+			</div>
+			</div>
+		</main>
+		<script>
+		function fn_call(){
+		var phpq3=document.getElementsByName("phpq3");
+		if(phpq3[1].checked)
+		{
+		  var audio = new Audio('applause8.mp3');
+			audio.play();
+		}
+		else
+		{		  var audio = new Audio('fail-buzzer-01.mp3');
+			audio.play();
+		}
+		}
+				function fn_ans()
+		{
+		  alert("CORRECT ANSWER IS B");
+		}
+		</script>
+	</body>
+</html>
